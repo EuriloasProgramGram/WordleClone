@@ -62,7 +62,7 @@
 </div>
 </body>
 <script>
-    const random = ["BRAWL", "GUMMY", "BOARD", "INPUT", "BOXES", "HOUSE", "DRAWS", "PHONE", "FRONT", "RACER", "CLICK", "GUESS", "CRANE", "WRITE", "KEEPS", "ENTER", "RADIO", "HELLO", "SCARE", "SHIRT", "STARE", "EAGLE", "SEVEN", "ENEMY", "SHADY","YACHT", "QUIET", "CACTI", "YEARN", "YEAST", "QUICK", "AGONY", "ACTOR", "ANGER", "BEAST", "BRAIN", "CEASE", "BEAST", "BRAKE", "BRAVE", "BREAD", "BURNT", "CHILD", "CABIN", "COULD", "CRAFT", "CREAM", "CYCLE", "DROWN", "DROVE", "DRYER", "DAISY", "DANCE", "PETTY", "EARLY", "MEDAL", "FLINT", "FLOOR", "FRAME", "FETCH", "FEVER", "GEODE", "GIANT", "GROSS", "GECKO", "FLUTE", "GRASS", "GLOOM", "HEARD", "HAPPY", "HIPPY", "LOSER", "PLEAD", "ZEBRA", "ZONED", "GREEN", "FENCE", "HONEY", "TIGER", "SLEEP", "PIZZA", "LIGHT", "HEART", "CABLE", "ANGLE", "ANGEL"]; //todo make this random word
+    const random = ["BRAWL", "GUMMY", "BOARD", "INPUT", "BOXES", "HOUSE", "DRAWS", "PHONE", "FRONT", "RACER", "CLICK", "GUESS", "CRANE", "WRITE", "KEEPS", "ENTER", "RADIO", "HELLO", "SCARE", "SHIRT", "STARE", "EAGLE", "SEVEN", "ENEMY", "SHADY","YACHT", "QUIET", "CACTI", "YEARN", "YEAST", "QUICK", "AGONY", "ACTOR", "ANGER", "BEAST", "BRAIN", "CEASE", "BEAST", "BRAKE", "BRAVE", "BREAD", "BURNT", "CHILD", "CABIN", "COULD", "CRAFT", "CREAM", "CYCLE", "DROWN", "DROVE", "DRYER", "DAISY", "DANCE", "PETTY", "EARLY", "MEDAL", "FLINT", "FLOOR", "FRAME", "FETCH", "FEVER", "GEODE", "GIANT", "GROSS", "GECKO", "FLUTE", "GRASS", "GLOOM", "HEARD", "HAPPY", "HIPPY", "LOSER", "PLEAD", "ZEBRA", "ZONED", "GREEN", "FENCE", "HONEY", "TIGER", "SLEEP", "PIZZA", "LIGHT", "HEART", "CABLE", "ANGLE", "ANGEL", "FEWER", "TOUCH", "TOUGH", "KRILL"]; // make this random word
     const answer = random[Math.floor(Math.random() * random.length)];
     const board = document.getElementById('board')
     const textBox = document.querySelector('input')
@@ -80,7 +80,7 @@
         // clear the text box once you hit submit
         textBox.value =""
 
-        writeGuess(guess) //todo create this function
+        writeGuess(guess) // create this function
 
         currentGuessNumber++
 
@@ -104,7 +104,7 @@
 
     function writeGuess(guess){
 
-        let matchArray = buildMatchArray(guess)//todo create function
+        let matchArray = buildMatchArray(guess)// create function
 
 
         let currentGuessRow =board.children[currentGuessNumber];
@@ -133,7 +133,7 @@
             let letter = answer[i].toUpperCase();
             answerAsArray.push(letter);
         }
-        //todo
+        //
 
         for (let i = 0; i < guess.length; i++){
             let letter = guess[i];
